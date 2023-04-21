@@ -17,7 +17,7 @@ class NavBar extends StatelessWidget {
             children: [
               Image.asset(
                 'assets/images/dog.png',
-                height: 60,
+                height: 50,
               ),
               const SizedBox(
                 width: 10,
