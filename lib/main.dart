@@ -13,8 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Bark And Beauty',
-      theme: ThemeData(
-          fontFamily: 'Helvetica', textTheme: GoogleFonts.ralewayTextTheme()),
+      theme: ThemeData(textTheme: GoogleFonts.merriweatherTextTheme()),
       home: const MyHomePage(),
       debugShowCheckedModeBanner: false,
     );

@@ -10,7 +10,7 @@ class MyHomePage extends StatelessWidget {
       backgroundColor: const Color(0xFFfcf6e7),
       body: SingleChildScrollView(
         child: Column(
-          children: const [NavBar(), ScheduleAppointment()],
+          children: [const NavBar(), const ScheduleAppointment(), MyService()],
         ),
       ),
     );

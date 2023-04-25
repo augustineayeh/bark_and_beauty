@@ -17,7 +17,7 @@ class ScheduleAppointment extends StatelessWidget {
                 width: 700,
                 child: Text(
                   'MAKE YOUR DOG HAPPY',
-                  style: TextStyle(fontSize: 100, fontWeight: FontWeight.w900),
+                  style: TextStyle(fontSize: 100, fontWeight: FontWeight.w600),
                 ),
               ),
               const SizedBox(
