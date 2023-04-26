@@ -14,15 +14,15 @@ class NavBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
-            children: const [
-              // Image.asset(
-              //   '',
-              //   height: 50,
-              // ),
-              SizedBox(
-                width: 10,
+            children: [
+              Image.asset(
+                'assets/images/dog-3.png',
+                height: 50,
               ),
-              SizedBox(
+              const SizedBox(
+                width: 5,
+              ),
+              const SizedBox(
                 width: 100,
                 child: Text(
                   'BARK & BEAUTY',

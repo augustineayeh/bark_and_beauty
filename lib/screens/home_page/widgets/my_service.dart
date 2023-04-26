@@ -26,126 +26,147 @@ class MyService extends StatelessWidget {
             height: 20,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 150),
+            padding: const EdgeInsets.only(left: 150, right: 60),
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                SizedBox(
-                  width: 200,
-                  child: Column(
+                Expanded(
+                  child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Container(
-                        height: 240,
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.black),
-                            borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(
-                                image: dog4.image, fit: BoxFit.cover)),
+                      SizedBox(
+                        width: 200,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: 240,
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.black),
+                                  borderRadius: BorderRadius.circular(15),
+                                  image: DecorationImage(
+                                      image: dog4.image, fit: BoxFit.cover)),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            const Text(
+                              'GROOMING',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w900, fontSize: 20),
+                            ),
+                            const Text(
+                                'Give your pet a makeover! Cut fur/coat. Different styles. Shows etc.')
+                          ],
+                        ),
                       ),
-                      const SizedBox(
-                        height: 10,
+                      SizedBox(
+                        width: 200,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: 240,
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.black),
+                                  borderRadius: BorderRadius.circular(15),
+                                  image: DecorationImage(
+                                      image: dogshower.image,
+                                      fit: BoxFit.cover)),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            const Text(
+                              'BATHING',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w900, fontSize: 20),
+                            ),
+                            const Text(
+                                "Is your pet getting slinky? It's bath time")
+                          ],
+                        ),
                       ),
-                      const Text(
-                        'GROOMING',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 20),
+                      SizedBox(
+                        width: 200,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: 240,
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.black),
+                                  borderRadius: BorderRadius.circular(15),
+                                  image: DecorationImage(
+                                      image: dog5.image, fit: BoxFit.cover)),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            const Text(
+                              'SKIN AND FUR TREATMENT',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w900, fontSize: 20),
+                            ),
+                            const Text(
+                                'A luxurious healthy coat for your furry companion')
+                          ],
+                        ),
                       ),
-                      const Text(
-                          'Give your pet a makeover! Cut fur/coat. Different styles. Shows etc.')
+                      SizedBox(
+                        width: 200,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: 240,
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.black),
+                                  borderRadius: BorderRadius.circular(15),
+                                  image: DecorationImage(
+                                      image: dog3.image, fit: BoxFit.cover)),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            const Text(
+                              'TEMPORARY COAT COLORING',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w900, fontSize: 20),
+                            ),
+                            const Text(
+                                "It's always a good moment for a party. Get ready!"),
+                            const SizedBox(
+                              height: 20,
+                            ),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 ),
-                SizedBox(
-                  width: 200,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        height: 240,
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.black),
-                            borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(
-                                image: dogshower.image, fit: BoxFit.cover)),
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      const Text(
-                        'BATHING',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 20),
-                      ),
-                      const Text("Is your pet getting slinky? It's bath time")
-                    ],
-                  ),
+                const SizedBox(
+                  width: 40,
                 ),
                 SizedBox(
-                  width: 200,
+                  height: 240,
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
-                        height: 240,
+                        padding: const EdgeInsets.all(3),
                         decoration: BoxDecoration(
-                            border: Border.all(color: Colors.black),
-                            borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(
-                                image: dog5.image, fit: BoxFit.cover)),
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      const Text(
-                        'SKIN AND FUR TREATMENT',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 20),
-                      ),
-                      const Text(
-                          'A luxurious healthy coat for your furry companion')
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  width: 200,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        height: 240,
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.black),
-                            borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(
-                                image: dog3.image, fit: BoxFit.cover)),
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      const Text(
-                        'TEMPORARY COAT COLORING',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w900, fontSize: 20),
-                      ),
-                      const Text(
-                          "It's always a good moment for a party. Get ready!"),
-                      const SizedBox(
-                        height: 20,
+                            borderRadius: BorderRadius.circular(20),
+                            color: Colors.black),
+                        child: Image.asset(
+                          'assets/images/next.png',
+                          height: 20,
+                          color: const Color(0xFf8cbeb2),
+                        ),
                       ),
                     ],
-                  ),
-                ),
-                Container(
-                  padding: const EdgeInsets.all(3),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.black),
-                  child: Image.asset(
-                    'assets/images/next.png',
-                    height: 20,
-                    color: const Color(0xFf8cbeb2),
                   ),
                 )
               ],
