@@ -6,5 +6,5 @@ Design: https://www.behance.net/gallery/164892047/Landing-page-for-Dogs-Grooming
 
 
 ## Screens
-Here's the home page so far. More screens will be added upon completion 
+Here's the home page so far. Remaning screens will be added upon completion 
  ![](./readme_files/home_page.png) 
