@@ -6,33 +6,32 @@ class ScheduleAppointment extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 50),
+      padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 150),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(
-                width: 700,
+                width: 550,
                 child: Text(
                   'MAKE YOUR DOG HAPPY',
-                  style: TextStyle(fontSize: 100, fontWeight: FontWeight.w600),
+                  style: TextStyle(fontSize: 80, fontWeight: FontWeight.w600),
                 ),
-              ),
-              const SizedBox(
-                height: 20,
               ),
               const Text(
                 'All dogs deserve some care and love',
-                style: TextStyle(fontSize: 30),
+                style: TextStyle(fontSize: 21),
               ),
               const Text('All dogs deserve some care and love',
-                  style: TextStyle(fontSize: 30)),
+                  style: TextStyle(fontSize: 21)),
               const SizedBox(
-                height: 50,
+                height: 20,
               ),
               Container(
+                width: 380,
                 padding:
                     const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                 decoration: BoxDecoration(
@@ -40,22 +39,49 @@ class ScheduleAppointment extends StatelessWidget {
                   border: Border.all(color: Colors.black, width: 2),
                   borderRadius: BorderRadius.circular(10),
                 ),
-                child: const Text(
-                  'SCHEDULE AN APPOINTMENT',
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
+                child: const Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                    'SCHEDULE AN APPOINTMENT',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20),
+                  ),
                 ),
-              )
+              ),
             ],
           ),
-          const SizedBox(
-            width: 40,
+          RotationTransition(
+            turns: const AlwaysStoppedAnimation(-3 / 360),
+            child: Stack(clipBehavior: Clip.none, children: <Widget>[
+              Container(
+                decoration: BoxDecoration(
+                    color: const Color(0xFf8cbeb2),
+                    border: Border.all(color: Colors.black),
+                    borderRadius: BorderRadius.circular(10)),
+                padding: const EdgeInsets.fromLTRB(50, 50, 50, 0),
+                height: 280,
+                width: 400,
+              ),
+              Positioned(
+                bottom: 1,
+                left: 95,
+                child: Image.asset(
+                  "assets/images/new.webp",
+                  height: 250,
+                ),
+              ),
+              Positioned(
+                top: -20,
+                right: -6,
+                child: Image.asset(
+                  "assets/images/sparkler.png",
+                  height: 90,
+                ),
+              )
+            ]),
           ),
-          Container(
-            color: const Color(0xFf8cbeb2),
-            height: 500,
-            width: 500,
-          )
         ],
       ),
     );

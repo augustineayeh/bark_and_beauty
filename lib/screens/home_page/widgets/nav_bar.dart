@@ -6,7 +6,7 @@ class NavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 150, vertical: 5),
       decoration: BoxDecoration(
           border: Border.all(color: Colors.black),
           color: const Color(0xFFffca43)),
@@ -14,19 +14,19 @@ class NavBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
-            children: [
-              Image.asset(
-                'assets/images/dog.png',
-                height: 50,
-              ),
-              const SizedBox(
+            children: const [
+              // Image.asset(
+              //   '',
+              //   height: 50,
+              // ),
+              SizedBox(
                 width: 10,
               ),
-              const SizedBox(
-                width: 150,
+              SizedBox(
+                width: 100,
                 child: Text(
                   'BARK & BEAUTY',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                 ),
               ),
             ],
@@ -56,7 +56,7 @@ class NavBar extends StatelessWidget {
               ),
               Container(
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
+                      const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                   decoration: BoxDecoration(
                       border: Border.all(color: Colors.black, width: 1.5),
                       color: const Color(0xFf8cbeb2),

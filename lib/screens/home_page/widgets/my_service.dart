@@ -6,9 +6,9 @@ class MyService extends StatelessWidget {
   Image dog1 = Image.asset('assets/images/dog1.webp');
   Image dog2 = Image.asset('assets/images/dog2.webp');
   Image dog3 = Image.asset('assets/images/dog3.webp');
-  Image dog4 = Image.asset('assets/images/dog4.webp');
-  Image dog5 = Image.asset('assets/images/dog5.webp');
-  Image dogbathing = Image.asset('assets/images/dogbathing.jpeg');
+  Image dog4 = Image.asset('assets/images/furrydog.webp');
+  Image dog5 = Image.asset('assets/images/dogfur.webp');
+  Image dogshower = Image.asset('assets/images/dogbath2.jpeg');
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -26,18 +26,18 @@ class MyService extends StatelessWidget {
             height: 20,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 100),
+            padding: const EdgeInsets.symmetric(horizontal: 150),
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 SizedBox(
-                  width: 220,
+                  width: 200,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        height: 280,
+                        height: 240,
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.black),
                             borderRadius: BorderRadius.circular(15),
@@ -57,21 +57,18 @@ class MyService extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(
-                  width: 100,
-                ),
                 SizedBox(
-                  width: 220,
+                  width: 200,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        height: 280,
+                        height: 240,
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.black),
                             borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
-                                image: dogbathing.image, fit: BoxFit.cover)),
+                                image: dogshower.image, fit: BoxFit.cover)),
                       ),
                       const SizedBox(
                         height: 10,
@@ -85,16 +82,13 @@ class MyService extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(
-                  width: 100,
-                ),
                 SizedBox(
-                  width: 220,
+                  width: 200,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        height: 280,
+                        height: 240,
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.black),
                             borderRadius: BorderRadius.circular(15),
@@ -114,16 +108,13 @@ class MyService extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(
-                  width: 100,
-                ),
                 SizedBox(
-                  width: 220,
+                  width: 200,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        height: 280,
+                        height: 240,
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.black),
                             borderRadius: BorderRadius.circular(15),
@@ -146,6 +137,17 @@ class MyService extends StatelessWidget {
                     ],
                   ),
                 ),
+                Container(
+                  padding: const EdgeInsets.all(3),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.black),
+                  child: Image.asset(
+                    'assets/images/next.png',
+                    height: 20,
+                    color: const Color(0xFf8cbeb2),
+                  ),
+                )
               ],
             ),
           )
