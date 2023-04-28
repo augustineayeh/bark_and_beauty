@@ -1,4 +1,4 @@
-# bark_and_beauty
+# Bark & Beauty
 
 Landing page for a dog grooming salon built with Flutter
 
