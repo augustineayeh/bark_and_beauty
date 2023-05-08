@@ -41,7 +41,7 @@ class ScheduleAppointment extends StatelessWidget {
                     'All dogs deserve some care and love',
                     style: TextStyle(fontSize: 23),
                   ),
-                  const Text('All dogs deserve some care and love',
+                  const Text('Contact me today and book a service',
                       style: TextStyle(fontSize: 23)),
                   const SizedBox(
                     height: 20,

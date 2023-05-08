@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "01cb2faacdb96cfb0703c898181140b8b6739bd738ab06a43ef1413277c472de"
+build_start_time: [1682520409, 329836845]
+build_end_time: [1682520409, 411156177]
+inputs:
+  "/Users/Aug/my codes/flutter projects/bark_and_beauty/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1682520369, 536629676]
+  "/Users/Aug/my codes/flutter projects/bark_and_beauty/macos/Runner/AppDelegate.swift": !private [1681949587, 0]
+  "/Users/Aug/my codes/flutter projects/bark_and_beauty/macos/Runner/MainFlutterWindow.swift": !private [1681949587, 0]

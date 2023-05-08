@@ -11,6 +11,7 @@ class MyHomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(children: [
           const NavBar(),
+          
           const ScheduleAppointment(),
           MyService()
         ]),
